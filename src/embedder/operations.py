@@ -1,3 +1,9 @@
+from .embedder_utils import EmbedderUtils
+from typing import Union
+from ..utils.misc_enums import MediapipeLandmark, Axes
+import numpy as np
+
+
 class EmbedderVectorByKeyOrNameOperation():
   def __init__(self, point1:Union[int, MediapipeLandmark], point2: Union[int, MediapipeLandmark]):
     self.point1 = EmbedderUtils.resolve_landmark_key(point1)

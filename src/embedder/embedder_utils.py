@@ -1,3 +1,7 @@
+from typing import Union
+from ..utils.misc_enums import MediapipeLandmark
+import numpy as np 
+
 class EmbedderUtils():
     @classmethod
     def resolve_landmark_key(cls, key_of_landmark: Union[MediapipeLandmark, int])->int :
